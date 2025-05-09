@@ -1,5 +1,6 @@
 import gradio as gr
 import time
+import os
 
 
 def interface_fun(Super_card_key):
@@ -18,4 +19,4 @@ with gr.Blocks() as demo:
     gr.Interface(fn=interface_fun, inputs="text", outputs=gr.Markdown())
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
