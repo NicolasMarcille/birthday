@@ -9,7 +9,7 @@ def birthday_game(super_card_key):
     if super_card_key == "Bear":
         return "## 🎉 Congrats! \nYou won a night in [Jiva Hotel](https://www.jivahill.com/en/index.html)"
     else:
-        return "### ❌ You won nothing! \nTry again next time."
+        return "## ❌ You won nothing! \nTry again next time."
 
 
 # Gradio interface
