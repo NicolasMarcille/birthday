@@ -1,1 +1,5 @@
 gradio
+fastapi
+pydantic
+uvicorn
+python-multipart
